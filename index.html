@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Simple Solar system</h1>
+            <p>A simple way to demonstrate how earth roates around sun. Done through HTML, CSS and some Script throug javascript</p>
+        </div>
+        
+
+        <div class="orbit">
+            <div id="sun">
+                <img src="img/sun.png" alt="" width="300px">
+            </div>
+            <div id="earth">
+                <img src="img/earth.png" alt="" width="80px">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    const earth = document.getElementById('earth');
+    let rotateBy = 0;
+    setInterval(()=>{
+        earth.style.transform = `rotate(${rotateBy}deg)`;
+        rotateBy+=10;
+    }, 100)
+    
+</script>

@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text{
+    color: #fff;
+
+}
+.container {
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    height: 108vh;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(img/space.jpg);
+    background-position: left;
+}
+.orbit{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 0.5px solid #a8a8a8;
+    border-radius : 50%;
+}
+#sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#earth{
+    position: absolute;
+    left: 210px;
+    top: -40px;
+    /* transform: rotate(120deg); */
+    transform-origin: 40px 290px;
+    transition: 1s ease-in-out;
+}
